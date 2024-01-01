@@ -47,9 +47,34 @@ void main() {
 
   // ****************** Ternary ********************
 
-  String somevalue = "Hello";
+  // String somevalue = "Hello";
 
-  String value = somevalue.startsWith("H") ? "World" : "Empty";
+  // String value = somevalue.startsWith("H") ? "World" : "Empty";
 
-  print(value);
+  // print(value);
+
+  // ************************** Switch Statements **************************
+
+  String value = "Hello";
+  int num = 10;
+
+  // Ex 1 :
+
+  switch (value) {
+    case "Hello":
+      print("Hello World");
+    // break statement is not necessary in dart until dart 3.0
+    default:
+      print("Empty");
+  }
+
+  // Ex 2 :
+  // Multiple conditions for variable(value)
+
+  switch (value) {
+    case "Hello" when num == 10:
+      print("All Conditions are ok");
+    default:
+      print("Not All Conditions are Ok");
+  }
 }
