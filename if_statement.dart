@@ -69,7 +69,7 @@ void main() {
   }
 
   // Ex 2 :
-  // Multiple conditions for variable(value)
+  // Multiple conditions for variable(value) using when
 
   switch (value) {
     case "Hello" when num == 10:
