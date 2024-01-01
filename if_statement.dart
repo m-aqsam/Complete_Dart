@@ -1,4 +1,14 @@
 void main() {
+// ************************** Operators **************************
+
+// > greater than
+// < less than
+// == Equality operator
+// <= ,>= les than , greater than equal to
+// && and operator
+// || or operator
+// ! , != not , not is equal to
+
   // ************************** if Statements **************************
 
   // ******** Simple :
@@ -25,13 +35,21 @@ void main() {
 
   // ******** 1 more example else if
 
-  int age3 = 42;
+  // int age3 = 42;
 
-  if (age3 > 0 && age3 <= 18) {
-    print("You'r a kid ! \nYou cant join the party");
-  } else if (age3 > 18 && age3 < 40) {
-    print("yes , You can join the Party !");
-  } else {
-    print("You'r too young , You can't join the party : ");
-  }
+  // if (age3 > 0 && age3 <= 18) {
+  //   print("You'r a kid ! \nYou cant join the party");
+  // } else if (age3 > 18 && age3 < 40) {
+  //   print("yes , You can join the Party !");
+  // } else {
+  //   print("You'r too young , You can't join the party : ");
+  // }
+
+  // ****************** Ternary ********************
+
+  String somevalue = "Hello";
+
+  String value = somevalue.startsWith("H") ? "World" : "Empty";
+
+  print(value);
 }
