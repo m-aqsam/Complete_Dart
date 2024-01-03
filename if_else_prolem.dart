@@ -42,4 +42,55 @@ void main() {
   } else {
     print("Num is odd.");
   }
+
+  // ************* Problem # 4 *************
+
+  //        Grade Evaluation
+
+  String grade = "B";
+
+  switch (grade) {
+    case 'A':
+      print('Excellent!');
+      break; // Break statement is optional in dart 3.0
+    case 'B':
+      print('Good job!');
+    case 'C':
+      print('Satisfactory.');
+    case 'D':
+      print('You need improvement.');
+    case 'F':
+      print('Sorry, you failed.');
+    default:
+      print('Invalid grade entered.');
+  }
+
+  // ************* Problem # 5 *************
+
+  //        Month Days
+
+  String month = "January";
+
+  switch (month) {
+    case 'January':
+    case 'March':
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December':
+      print('31 days in $month.');
+      break;
+    case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+      print('30 days in $month.');
+      break;
+    case 'February':
+      print('28 or 29 days in $month.');
+      break;
+    default:
+      print('Invalid month entered.');
+  }
 }
