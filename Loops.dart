@@ -1,3 +1,5 @@
+// ignore_for_file: unused_label
+
 void main() {
   // ***************** Loops In dart *****************
 
@@ -25,7 +27,7 @@ void main() {
     num++;
   } while (num <= 5);
 
-  // Break and continue in Loops :
+  // ************** Break and continue in Loops **************
 
   int break_dig = 0;
 
@@ -41,9 +43,32 @@ void main() {
   for (var i = 0; i <= 10; i++) {
     if (i == 3 || i == 5) {
       print("Skipped at : $i");
+      continue; //skipped the iteration for 4 and 5
+    }
+    print("Num : $i");
+  }
+
+  // Examples of Break and Continue
+
+  // ( 1 ) Write only even numbers from 0 to 10.
+
+  for (var i = 0; i <= 10; i++) {
+    if (i % 2 != 0) {
+      continue;
+    }
+    print(i); // print only even numbers
+  }
+
+  // ( 3 ) Skip 3 and 5 from 1 tp 10 count
+
+  for (var i = 0; i <= 10; i++) {
+    if (i == 3 || i == 5) {
+      print("Skip $i no");
       continue;
     }
 
-    print("Num : $i");
+    print(i);
   }
+
+  // ( 2 ) Write prime numbers from 1 to 10 ? Tomorrow Next
 }
