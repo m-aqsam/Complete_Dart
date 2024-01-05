@@ -24,4 +24,26 @@ void main() {
     print("Your num is $num");
     num++;
   } while (num <= 5);
+
+  // Break and continue in Loops :
+
+  int break_dig = 0;
+
+  for (var i = 0; i <= 10; i++) {
+    if (i == 3) {
+      print("Breaking the lopp at i=3 ");
+      break; // break the loop when i=3
+    }
+
+    print("Num : $i");
+  }
+
+  for (var i = 0; i <= 10; i++) {
+    if (i == 3 || i == 5) {
+      print("Skipped at : $i");
+      continue;
+    }
+
+    print("Num : $i");
+  }
 }
