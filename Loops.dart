@@ -70,5 +70,24 @@ void main() {
     print(i);
   }
 
-  // ( 2 ) Write prime numbers from 1 to 10 ? Tomorrow Next
+  // ( 2 ) Write prime numbers from 1 to 10 ?
+
+  for (int number = 2; number <= 10; number++) {
+    if (isPrime(number)) {
+      print(number);
+    }
+  }
+}
+
+bool isPrime(int n) {
+  if (n <= 1) {
+    return false;
+  }
+  for (int i = 2; i <= n ~/ 2; i++) {
+    //" ~ " Operator used is called Integer Division (A = (A/B)*B + (A rem B)
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  return true;
 }
