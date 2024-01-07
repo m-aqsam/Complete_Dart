@@ -44,7 +44,7 @@ String greet(String name) {
   return (age: 12, String: "Aqsam");
 }
 
-// Quick about Functions 
+// Quick about Functions  
 
 // Instead of using {} braces you can use => in functions 
-//Recommended whrn when you have return single value 
+//Recommended when when you have return single value 
