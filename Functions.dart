@@ -16,6 +16,9 @@ void main() {
   print(values.String);
 
   print(Print_Data());
+
+  int result = calculateFactorial(5);
+  print("Factorial: $result");
 }
 
 // Functions
@@ -44,7 +47,20 @@ String greet(String name) {
   return (age: 12, String: "Aqsam");
 }
 
-// Quick about Functions  
+// Quick about Functions
 
-// Instead of using {} braces you can use => in functions 
-//Recommended when when you have return single value 
+// Instead of using {} braces you can use => in functions
+//Recommended when when you have return single value
+
+// Example #1  Factorial of a Number
+
+int calculateFactorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * calculateFactorial(n - 1);
+  }
+}
+
+// Done with fumctions 
+
