@@ -45,4 +45,5 @@ void main() {
   Base obj2 = Base.witha(4);
 
   Derived obj3 = Derived(); // first call base constructor then derive const
+  Derived obj4 = Derived();
 }
