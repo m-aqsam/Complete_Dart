@@ -17,7 +17,14 @@ class Person {
   }
 }
 
+class Person2 {
+  person2(String sp) {
+    print("$sp I am a constructor of Person2");
+  }
+}
+
 void main() {
-  Person person1 = Person(); // Object of class
+  Person person1 = Person(); // Object of Person1
+  Person2 obj1 = Person2(); // Object of Person2
   person1.print_name("Hello");
 }
