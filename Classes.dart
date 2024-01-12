@@ -54,6 +54,16 @@ class Derived extends Base {
   Derived.witha(int a) {
     print("I am a Constructor of Derived with $a");
   }
+
+  // Static variables and methods
+  // Static variables can be accessed by the name of class without creating instance/object of the class
+
+  int new_age = 18;
+  static int age = 18;
+
+  static int my_age() {
+    return age;
+  }
 }
 
 void main() {
@@ -69,4 +79,9 @@ void main() {
   print(obj1.height);
   obj1.setheight = 10; // update private variable value
   print(obj1.height);
+
+  // print(Derived.new_age); // error can be access by using static variable
+
+  print(Derived.age); //Variable
+  print(Derived.my_age()); // Method
 }
