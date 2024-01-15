@@ -5,6 +5,17 @@ void main(List<String> args) {
   Base derived1 = Derived1();
   derived1.turnbase_on();
 }
+// Also cover some topics like abstract class
+//Implementation
+//extends feature
+//Interfaces
+
+// Class who implement NewMthods class have to be implement these methods
+
+abstract class NewMethods {
+  int Meth1();
+  int Meth2();
+}
 
 class Base {
   int age = 18;
