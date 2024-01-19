@@ -10,6 +10,7 @@ class BankAccount {
       _balance -= amount;
     } else {
       print("Insufficient funds");
+      print("Recharge your acc");
     }
   }
 
