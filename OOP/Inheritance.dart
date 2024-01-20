@@ -1,16 +1,18 @@
 class Vehicle {
   void start() {
     print("Vehicle starting");
+    print("Get Started");
   }
 
   void stop() {
+    print("Vehicle stopping");
     print("Vehicle stopping");
   }
 }
 
 class Car extends Vehicle {
   void honk() {
-    print("Honk honk!");
+    print("Peee Peee");
   }
 }
 
