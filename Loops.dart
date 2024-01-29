@@ -29,6 +29,7 @@ void main() {
 
   // ************** Break and continue in Loops **************
 
+  // ignore: unused_local_variable
   int break_dig = 0;
 
   for (var i = 0; i <= 10; i++) {

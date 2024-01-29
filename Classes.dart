@@ -1,5 +1,7 @@
 // Class 1
 
+// ignore_for_file: unused_field
+
 class Person {
   String? name = "No";
   String? s2 = "Yo";
