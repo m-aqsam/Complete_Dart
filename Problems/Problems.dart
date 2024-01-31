@@ -12,4 +12,21 @@ void main(List<String> args) {
 
   print("Sum: ${num1 + num2}");
   print("Text Length: ${text.length}");
+
+  print("*****************  (2)  *****************");
+
+  //Create a Dart program that uses if-else statements to determine
+  //whether a given number is even or odd. Implement a loop to print the first 10 numbers in the Fibonacci sequence.
+
+  int number = 7;
+
+  if (number % 2 == 0) {
+    print("$number is even.");
+  } else {
+    print("$number is odd.");
+  }
+
+  for (int i = 0, a = 0, b = 1; i < 10; i++, b = a + b, a = b - a) {
+    print(b);
+  }
 }

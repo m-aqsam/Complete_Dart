@@ -1,5 +1,5 @@
-// Objectives
-// 1. Maps
+// ******** Maps ********
+
 // --> KEY has to be unique
 // --> VALUE can be duplicate
 
