@@ -29,4 +29,17 @@ void main(List<String> args) {
   for (int i = 0, a = 0, b = 1; i < 10; i++, b = a + b, a = b - a) {
     print(b);
   }
+
+  print("*****************  (3)  *****************");
+
+  //Define a function in Dart to calculate the factorial of a given number.
+
+  int calculateFactorial(int n) {
+    if (n == 0 || n == 1) {
+      return 1;
+    }
+    return n * calculateFactorial(n - 1);
+  }
+
+  print("Factorial of 5: ${calculateFactorial(5)}");
 }
